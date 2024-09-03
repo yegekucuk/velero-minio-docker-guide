@@ -39,8 +39,8 @@ The example above works this way:
 * `-v` sets a file path as a persistent volume location for the container to use. When MinIO writes data to `/data`, that data actually writes to the local path `~/minio/data` where it can persist between container restarts. You can replace `${HOME}/minio/data` with another location in the user’s home directory to which the user has read, write, and delete access.
 * `-e` sets the environment variables `MINIO_ROOT_USER` and `MINIO_ROOT_PASSWORD`, respectively. These set the root user credentials. Change the example values to use for your container.
 
-### Step 3. Velero Configuration and Install
-#### For Minio Credentials.
+## Step 3. Velero Configuration and Install
+### For Minio Credentials.
 You need to create a `minio.credentials` file for Velero to read credentials and access MinIO.
 
 ```c
@@ -58,7 +58,7 @@ You can create access key and secret on MinIO UI.
 4. You can see `Access Key` and `Secret Key`. Copy and paste them to save.
 5. Click `Create` and create an Access Key using these credentials.
 
-#### Get the IP address of your device
+### Get the IP address of your device
 For Minikube to access Docker container you need to get the IP address of your device. You can get it with `ifconfig` command on Linux bash.
 ```bash
 ifconfig
@@ -81,7 +81,7 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         TX packets 909  bytes 133528 (133.5 KB)
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 ```
-#### Deploy Velero on Kubernetes Cluster with using MinIO Credentials
+### Deploy Velero on Kubernetes Cluster with using MinIO Credentials
 ```bash
 velero install \
    --provider aws \
