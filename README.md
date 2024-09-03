@@ -2,10 +2,10 @@
 Full guide on how to backup kubernetes cluster using Velero CLI and MinIO running on Docker container. The documentation is prepared for **Linux**, specificially **Ubuntu  24.04**.
 
 ## Contents
-1. [Requirements](doc:readme-ov-file#step-1-requirements)
-2. [Deploy MinIO with Docker](doc:readme-ov-file#step-2-deploy-minio-with-docker)
-3. [Velero Configuration and Install](doc:readme-ov-file#step-3-velero-configuration-and-install)
-4. [Creating Backup and Restore](doc:readme-ov-file#step-4-creating-backup-and-restore)
+1. [Requirements](#step-1-requirements)
+2. [Deploy MinIO with Docker](#step-2-deploy-minio-with-docker)
+3. [Velero Configuration and Install](#step-3-velero-configuration-and-install)
+4. [Creating Backup and Restore](#step-4-creating-backup-and-restore)
 
 ## Step 1. Requirements
 * sudo privilege
